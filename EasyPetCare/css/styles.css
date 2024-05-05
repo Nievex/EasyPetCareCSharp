@@ -17,7 +17,7 @@
 }
 
 body {
-    /* background-color: #fffcf6;*/
+    background-color: #fffcf6;
     font-family: Raleway;
 }
 
@@ -150,6 +150,9 @@ header {
 .prod-name {
     color: var(--black);
     font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .price {
@@ -589,6 +592,27 @@ header {
     border-radius: 10px;
 }
 
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 0.8rem;
+
+    margin: 2rem 0;
+}
+
+.category-btn {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 10px;
+}
+
+
 /* Product Info */
 .product-info-section {
     padding: 2rem 4rem 72px 4rem;
@@ -605,7 +629,7 @@ header {
     flex-shrink: 0;
 }
 
-    .product-img img {
+    .product-img .image {
         height: 100%;
         width: 100%;
     }

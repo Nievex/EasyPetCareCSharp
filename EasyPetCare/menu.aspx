@@ -45,268 +45,29 @@
         <main class="max-width">
             <section class="menu-section">
                 <div class="menu-heading">
-                    <h1>Products</h1>
+                    <h1>Menu</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum urna lectus, id luctus nisi cursus et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ultricies, quam sed posuere pretium, arcu ligula varius augue, pretium ullamcorper ex mauris vitae libero.</p>
                     <div class="flex">
-                        <input type="text" class="search-bar" placeholder="Search..." />
+                        <asp:TextBox ID="searchTextBox" runat="server" placeholder="Search..." CssClass="search-bar" AutoPostBack="true" OnTextChanged="SearchTextBox_TextChanged"></asp:TextBox>
+                    </div>
+                    <div class="category-grid">
+                        <asp:Button runat="server" Text="Dog Food" CssClass="category-btn" OnClick="DogFood_Btn" />
+                        <asp:Button runat="server" Text="Dog Treats" CssClass="category-btn" OnClick="DogTreats_Btn" />
+                        <asp:Button runat="server" Text="Pet Grooming Supplies" CssClass="category-btn" OnClick="PetGrooming_Btn" />
+                        <asp:Button runat="server" Text="Pet Health & Wellness" CssClass="category-btn" OnClick="PetHealth_Btn" />
+                        <asp:Button runat="server" Text="Pet Supplies" CssClass="category-btn" OnClick="PetSupplies_Btn" />
+                        <asp:Button runat="server" Text="Cat Food" CssClass="category-btn" OnClick="CatFood_Btn" />
+                        <asp:Button runat="server" Text="Cat Treats" CssClass="category-btn" OnClick="CatTreats_Btn" />
+                        <asp:Button runat="server" Text="Cat Litter & Accessories" CssClass="category-btn" OnClick="CatLitter_Btn" />
+                        <asp:Button runat="server" Text="Features" CssClass="category-btn" OnClick="Features_Btn" />
                     </div>
                 </div>
 
                 <div class="menu-grid">
-                    <div class="cards-container">
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="products-card" href="#">
-                            <img src="images/product-1.png" alt="Paws & Fur" />
-                            <div class="product-info">
-                                <p class="prod-name">PAWS & FUR (500ml)</p>
-                                <p class="price">125.00 Pesos</p>
-                                <div class="discount">
-                                    <p>250.00 Pesos</p>
-                                    <span>50% off</span>
-                                </div>
-                            </div>
-
-                            <a class="products-card" href="#">
-                                <img src="images/product-1.png" alt="Paws & Fur" />
-                                <div class="product-info">
-                                    <p class="prod-name">PAWS & FUR (500ml)</p>
-                                    <p class="price">125.00 Pesos</p>
-                                    <div class="discount">
-                                        <p>250.00 Pesos</p>
-                                        <span>50% off</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="products-card" href="#">
-                                <img src="images/product-1.png" alt="Paws & Fur" />
-                                <div class="product-info">
-                                    <p class="prod-name">PAWS & FUR (500ml)</p>
-                                    <p class="price">125.00 Pesos</p>
-                                    <div class="discount">
-                                        <p>250.00 Pesos</p>
-                                        <span>50% off</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="products-card" href="#">
-                                <img src="images/product-1.png" alt="Paws & Fur" />
-                                <div class="product-info">
-                                    <p class="prod-name">PAWS & FUR (500ml)</p>
-                                    <p class="price">125.00 Pesos</p>
-                                    <div class="discount">
-                                        <p>250.00 Pesos</p>
-                                        <span>50% off</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="products-card" href="#">
-                                <img src="images/product-1.png" alt="Paws & Fur" />
-                                <div class="product-info">
-                                    <p class="prod-name">PAWS & FUR (500ml)</p>
-                                    <p class="price">125.00 Pesos</p>
-                                    <div class="discount">
-                                        <p>250.00 Pesos</p>
-                                        <span>50% off</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="products-card" href="#">
-                                <img src="images/product-1.png" alt="Paws & Fur" />
-                                <div class="product-info">
-                                    <p class="prod-name">PAWS & FUR (500ml)</p>
-                                    <p class="price">125.00 Pesos</p>
-                                    <div class="discount">
-                                        <p>250.00 Pesos</p>
-                                        <span>50% off</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="products-card" href="#">
-                                <img src="images/product-1.png" alt="Paws & Fur" />
-                                <div class="product-info">
-                                    <p class="prod-name">PAWS & FUR (500ml)</p>
-                                    <p class="price">125.00 Pesos</p>
-                                    <div class="discount">
-                                        <p>250.00 Pesos</p>
-                                        <span>50% off</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="products-card" href="#">
-                                <img src="images/product-1.png" alt="Paws & Fur" />
-                                <div class="product-info">
-                                    <p class="prod-name">PAWS & FUR (500ml)</p>
-                                    <p class="price">125.00 Pesos</p>
-                                    <div class="discount">
-                                        <p>250.00 Pesos</p>
-                                        <span>50% off</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="products-card" href="#">
-                                <img src="images/product-1.png" alt="Paws & Fur" />
-                                <div class="product-info">
-                                    <p class="prod-name">PAWS & FUR (500ml)</p>
-                                    <p class="price">125.00 Pesos</p>
-                                    <div class="discount">
-                                        <p>250.00 Pesos</p>
-                                        <span>50% off</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </a>
-                    </div>
+                            <asp:Panel ID="productContainer" runat="server" class="cards-container">
+                            </asp:Panel>
                 </div>
+                
             </section>
         </main>
 
@@ -358,5 +119,20 @@
             <p class="copyright">&copy; Copyright 2024, Easy Pet Care</p>
         </footer>
     </form>
+
+    <script type="text/javascript">
+        function transferToProductPage(productID) {
+            var url = '<%= ResolveClientUrl("~/menu.aspx/transferToProductPage") %>';
+            PageMethods.transferToProductPage(productID, onSuccessTransfer, onErrorTransfer);
+        }
+
+        function onSuccessTransfer() {
+            // No additional action needed
+        }
+
+        function onErrorTransfer(error) {
+            console.error('Error occurred during server transfer: ' + error.get_message());
+        }
+    </script>
 </body>
 </html>

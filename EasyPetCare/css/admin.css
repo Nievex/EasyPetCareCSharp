@@ -1,0 +1,45 @@
+﻿form {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.container div {
+    width: 50%;
+}
+
+.container label {
+    font-size: 18px;
+}
+
+.text-bx {
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.img-insert-btn {
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.dropdown {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 1rem 5px;
+}
+
+.insert-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background: green;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}

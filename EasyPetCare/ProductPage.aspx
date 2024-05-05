@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="menu.aspx.cs" Inherits="EasyPetCare.menu" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductPage.aspx.cs" Inherits="EasyPetCare.menu" %>
 
 <!DOCTYPE html>
 
@@ -46,15 +46,15 @@
             <section class="product-info-section">
                 <div class="product-info-container">
                     <div class="product-img">
-                        <img src="images/product-1.png" />
+                        <asp:Image runat="server" ID="productImage" CssClass="image" />
                     </div>
                     <div class="product-right">
                         <div>
-                            <h1>PAWS & FUR (500ml)</h1>
+                            <asp:Label runat="server" ID="productName" CssClass="product-name"></asp:Label>
                             <p class="stars">*****</p>
-                            <p class="product-description">
-                                Give your beloved pet the spa treatment they deserve with our Paws & Fur Pet Shampoo. Specially formulated to cleanse, condition, and nourish their coat, this gentle shampoo leaves your furry companion feeling fresh, soft, and oh-so-cuddly. 
-                            </p>
+                            <asp:Label runat="server" ID="productDescription" CssClass=".product-description">
+                                Give your beloved pet the spa treatment they deserve with our Paws & Fur Pet Shampoo. Specially formulated to cleanse, condition, and nourish their coat, this gentle shampoo leaves your furry companion feeling fresh, soft, and oh-so-cuddly.
+                            </asp:Label>
                         </div>
                         <div>
                             <div>
@@ -76,20 +76,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section class="shop-section">
-                <div class="shop-container">
-                    <div>
-                        <img />
-                    </div>
-                    <div>
-                        <h1>NAME</h1>
-                        <input type="button" />
-                    </div>
-                    <div>
-                        <p>DESCIPTIOn</p>
-                    </div>
+                <div class="product-description">
+
                 </div>
             </section>
         </main>
